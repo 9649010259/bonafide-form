@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <title>Bonafide Form - Rajasthan</title>
+  <style>
+    body { font-family: Devanagari, Arial, sans-serif; margin: 40px; }
+    h2 { text-align: center; }
+    label { display: block; margin-top: 10px; font-weight: bold; }
+    input, textarea, select {
+      width: 100%;
+      padding: 6px;
+      margin-top: 4px;
+      border: 1px solid #999;
+      border-radius: 4px;
+    }
+    .form-section {
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+    .print-btn {
+      margin-top: 20px;
+      text-align: center;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Rajasthan Bonafide Certificate Application Form</h2>
+  <form id="bonafideForm">
+    <div class="form-section">
+      <label>1. आवेदनकर्ता का नाम:</label>
+      <input type="text" name="applicant_name" required>
+
+      <label>2. पिता/पति का नाम:</label>
+      <input type="text" name="father_husband_name">
+
+      <label>3. वर्तमान स्थायी पता:</label>
+      <textarea name="current_address" rows="2"></textarea>
+
+      <label>4. पिता/पति का मूल निवास स्थान:</label>
+      <input type="text" name="native_place">
+
+      <label>5. पिता/पति का व्यवसाय:</label>
+      <input type="text" name="occupation">
+
+      <label>6. व्यवसाय का पता:</label>
+      <input type="text" name="work_address">
+
+      <label>7. जन्म स्थान:</label>
+      <input type="text" name="birth_place">
+
+      <label>8. जन्म तिथि:</label>
+      <input type="date" name="birth_date">
+
+      <label>9. शिक्षा प्राप्त की (कक्षा और स्थान):</label>
+      <textarea name="education_details" rows="3"></textarea>
+
+      <label>10. पारिवारिक संपत्ति का विवरण:</label>
+      <textarea name="property_details" rows="3"></textarea>
+
+      <label>11. क्या मतदाता सूची में नाम है?</label>
+      <select name="voter_list">
+        <option value="हाँ">हाँ</option>
+        <option value="नहीं">नहीं</option>
+      </select>
+
+      <label>12. मोबाइल नंबर:</label>
+      <input type="text" name="mobile_number">
+
+      <label>13. कितने वर्षों से राजस्थान में रह रहे हैं?</label>
+      <input type="text" name="years_in_rajasthan">
+
+      <label>14. महिला के लिए (यदि लागू हो): वैवाहिक जानकारी</label>
+      <textarea name="marriage_info" rows="3"></textarea>
+    </div>
+
+    <div class="print-btn">
+      <button type="button" onclick="window.print()">🖨️ प्रिंट करें</button>
+    </div>
+  </form>
+
+</body>
+</html>
